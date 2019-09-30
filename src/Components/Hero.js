@@ -1,27 +1,42 @@
 import React from 'react';
-import SearchIcon from '.././assets/search.svg'
+import Nav from './Nav.js';
 
 class Hero extends React.Component {
     render() {
         return (
             <div>
-                <nav className="col-12">
-                    <div className="col-3">
-                        dillon moore media
+                <Nav />
+                <div>
+                    <h2>Hello, I am</h2>
+                    <h1>Dillon Moore</h1>
+                    <div>
+                        <span>
+                            {/* circular logo of his work exp will live here */}
+                        </span>
+                        <span>
+                            {/* circular logo of his work exp will live here */}
+                        </span>
+                        <span>
+                            {/* circular logo of his work exp will live here */}
+                        </span>
                     </div>
-                    <div className="col-3">
+                    <button> hire me now </button>
+                    {/* make sure to add click event to all btns */}
+                </div>
+                <div>
+                    <div>
+                        all projects
+                    </div>
+                    <div>
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
+                            <li>
+                                <a href="www.google.com">
+                                    {/* social icon will live here. max of 5 if he wants to adhere to design */}
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div className="col-3">
-                        {/* <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
-                        <img src={SearchIcon} alt="" />
-                    </div>
-                </nav>
+                </div>
             </div>
         )
     }
