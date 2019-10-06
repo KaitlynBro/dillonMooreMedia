@@ -6,31 +6,28 @@ class Nav extends React.Component {
             <div className="col-12">
                 <nav className="col-12 nav-wrapper">
                     <div className="col-2 nav-col">
-                        <h2>dillon moore
-                            <span></span>
+                        <h2>
+                            <a href="index.html">dillon moore</a>
                         </h2>
                     </div>
                     <div className="col-6 nav-col">
                         <ul>
                             <li>
-                                <a href="www.google.com">Home</a>
+                                <a href="about.com">About</a>
                             </li>
                             <li>
-                                <a href="www.google.com">About</a>
+                                <a href="projects.com">Projects</a>
                             </li>
                             <li>
-                                <a href="www.google.com">Projects</a>
+                                <a href="contact.com">Contact</a>
                             </li>
                             <li>
-                                <a href="www.google.com">Contact</a>
-                            </li>
-                            <li>
-                                <a href="www.google.com">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                         </ul>
                     </div>
                     <div className="col-2 nav-col">
-                        <button> listen live </button>
+                        <a href="1015thehawk.ca">Listen Live</a>
                     </div>
                 </nav>
             </div>
