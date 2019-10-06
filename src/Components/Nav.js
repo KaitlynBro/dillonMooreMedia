@@ -3,7 +3,7 @@ import React from 'react';
 class Nav extends React.Component {
     render() {
         return (
-            <div className="col-12">
+            <div className="nav col-12">
                 <nav className="col-12 nav-wrapper">
                     <div className="col-2 nav-col">
                         <h2>

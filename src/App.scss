@@ -16,6 +16,7 @@ $transparent:transparent;
     text-align: center;
     line-height:100px;
     font-weight: 700;
+    width: 40%;
 }
 
 @mixin h2 {
@@ -120,7 +121,6 @@ body {
     flex-direction:row;
     justify-content: space-around;
     padding:60px 0;
-    box-sizing:content-box;
     font-family: $josefin;
     .nav-col {
         padding:0;
@@ -181,19 +181,12 @@ header {
     background-image: url('./././placeholderbg.jpg');
     background-size: cover;
     background-position: 100% 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
     .hero-content {
-        position: absolute;
-        top: 40%;
-        transform: translate(-50%);
-        left: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 80vh;
         h4 {
             font-size: 20px;
             color: $white;
@@ -216,4 +209,42 @@ header {
             }
         }
     }
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 10%;
+    transform: translateY(-100%);
+    padding: 0 70px;
+    .left {
+        p {
+            @include navLinks;
+            margin:0 0 0 40px;
+            &:before {
+                content: "";
+                position: absolute;
+                background: $white;
+                width: 60px;
+                height: 3px;
+                transform: translate(-120%);
+                top: 40%;
+                left: 0;
+            }
+            &:hover {
+                color: $white;
+                &:before {
+                    background: $white;
+                    width:100%;
+                    height: 2px;
+
+                }
+            }
+        }
+    }
+    // .right {
+
+    // }
 }
