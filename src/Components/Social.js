@@ -9,13 +9,16 @@ class Social extends React.Component {
                 </div>
                 <div className="right">
                         <a href="https://www.linkedin.com/in/katie-brouwers">
-                            <i clasName="fa fa-linkedin-in"></i>
+                            <i className="fa fa-linkedin"></i>
                         </a>
                         <a href="https://twitter.com/kaitlynbrouwers">
                             <i className="fa fa-twitter"></i>
                         </a>
                         <a href="https://www.instagram.com/kb.development/">
                             <i className="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kb.development/">
+                            <i className="fa fa-facebook"></i>
                         </a>
                 </div>
             </div>

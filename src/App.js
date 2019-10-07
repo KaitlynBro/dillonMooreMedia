@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Components/Nav.js';
 import Hero from './Components/Hero.js';
 import Social from './Components/Social.js';
+import Testimonials from './Components/Testimonials.js'
 
 import './App.scss';
 
@@ -14,6 +15,9 @@ function App() {
         <Hero />
         <Social />
       </header>
+      <section className="testimonials-section">
+        <Testimonials />
+      </section>
     </div>
   );
 }
