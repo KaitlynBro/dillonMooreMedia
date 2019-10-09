@@ -273,11 +273,10 @@ header {
         }
     }
     .carousel-item {
-        padding: 100px;
-        min-height: 300px;
+        min-height: 400px;
         .carousel-caption {
-            position: unset;
             padding: 0;
+            top: 30%;
             h3 {
                 @include h3;
                 width: 70%;
@@ -302,6 +301,12 @@ header {
                     letter-spacing: 0.55px;
                     font-style: italic;
                     text-transform: capitalize;
+                }
+            }
+            .star-rating {
+                margin: 10px auto;
+                .solid-star, .empty-star {
+                    width: 15px;
                 }
             }
         }
