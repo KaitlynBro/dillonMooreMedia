@@ -363,43 +363,69 @@ header {
             border-top: 1px solid $grey;
             border-bottom: 1px solid $grey;
             margin:60px 0 30px 0;
-            .col {
+            .carousel-control-prev, .carousel-control-next{
+                width: 5%;
+            }
+            ol.carousel-indicators {
+                display: none;
+            }
+            .slide {
                 padding: 30px 0;
+                min-height: unset;
                 position: relative;
-                h3 {
-                    font-family: $playfair;
-                    font-size: 40px;
-                    line-height: 36px;
-                    color: $yellow;
-                    font-weight: 900;
-                }
-                h4 {
-                    font-family: $josefin;
-                    font-size: 14px;
-                    line-height: 36px;
-                    color: $black;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
-                    font-weight: 600;
-                }
-                p {
-                    font-family: $josefin;
-                    font-size: 15px;
-                    line-height: 20px;
-                    color: $grey;
-                    width: 80%;
-                    margin: 0 auto;
-                }
-                &:after {
-                    content:"";
-                    position: absolute;
-                    top: -5px;
-                    left: 50%;
-                    transform: translate(-50%);
-                    background-color:$yellow;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 100%;
+                .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .item {
+                        width: 30%;
+                        &.mid {
+                            padding: 40px;
+                            box-sizing: content-box;
+                            box-shadow: 0px 0px 40px 10px #e4e1e1;
+                            h3 {
+                                font-size: 50px;
+                            }
+                        }
+                    }
+                    h3 {
+                        font-family: $playfair;
+                        font-size: 40px;
+                        line-height: 36px;
+                        color: $yellow;
+                        font-weight: 900;
+                    }
+                    h4 {
+                        font-family: $josefin;
+                        font-size: 14px;
+                        line-height: 36px;
+                        color: $black;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                        font-weight: 600;
+                        margin-bottom:0;
+                    }
+                    p {
+                        font-family: $josefin;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: $grey;
+                        margin: 0 auto;
+                        width: 75%;
+                    }
+                    // &:after {
+                    //     content:"";
+                    //     position: absolute;
+                    //     top: -5px;
+                    //     left: 50%;
+                    //     transform: translate(-50%);
+                    //     background-color:$yellow;
+                    //     width: 10px;
+                    //     height: 10px;
+                    //     border-radius: 100%;
+                    // this is the little yellow dots on top of each content block
+                    // }
                 }
             }
         }
