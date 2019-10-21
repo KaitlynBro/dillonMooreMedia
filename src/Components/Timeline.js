@@ -9,7 +9,7 @@ class Timeline extends React.Component {
                     <h4>since 1992</h4>
                     <h3><span>making</span> history</h3>
                 </div>
-                <Carousel className="middle col-7">
+                <Carousel className="middle col-lg-7 col-md-11">
                     <Carousel.Item className="slide">
                         <div className="wrapper">
                             <span className="item">
